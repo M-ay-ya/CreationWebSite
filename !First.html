@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"> <!-- On indique le charset pour l'encodage des caractères -->
         <title>May's World!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css"> <!-- On lie le fichier CSS pour le style -->
         <!-- C'est un link normal et lorsqu'on utilise a href c'est un hyperlink -->
     </head>
@@ -12,14 +13,17 @@
         <h1 style="background-color: slateblue;">May's World</h1>
         <p>J'aimerais vous présenter quelqu'un de significatif dans <br> ce re again third time personnage !</p>
         <!-- La balise <br> permet de revenir à la ligne, it is called an empty elemnts cause they dont have end tag -->
-        <img src="tropical_fish.jpg" title="J'aime bcp MINECRAFT, j'y ai bcp joué étant petite" alt="C'est une image d'un tropical fish de Minecraft" width ="100" height="100">
+        <img src="tropical_fish.jpg" title="J'aime bcp MINECRAFT, j'y ai bcp joué étant petite" 
+        alt="C'est une image d'un tropical fish de Minecraft" class="no_change_img">
         <!-- la balise alt s'execute lorque l'image n'apparait pas -->
 
         <p>Voici le <strong>SOMMAIRE</strong> de cette page :<br>
             <!-- On utilise la balise <strong> pour mettre en gras -->
-            <a href="#organisation">Comment organiser son texte</a><br>
-            <a href="#ancrage">Utilisation des balises "a" et "href"</a><br>
-            <a href="#magic">Un petit exercice avec des images</a>
+            <a href="#C1">Comment organiser son texte</a><br>
+            <a href="#C2">Utilisation des balises "a" et "href"</a><br>
+            <a href="#C3">Un petit exercice avec des images</a><br>
+            <a href="#C4">Practice, that's it!</a>
+
             <!-- On utilise la balise <a> pour créer des liens et ici l'utilise comme sommaire et naviguer
                 plus rapidement dans le site web-->
         </p>
@@ -28,8 +32,8 @@
 
 
 
-        <h2 id="organisation" style="border:4px solid slateblue ;">J'organise mon texte!</h2>
-        <!-- Ici l'ID est oragnisation et c'est utilise pour le sommaire!! 
+        <h2 id="C1" style="border:4px solid slateblue ;">J'organise mon texte!</h2>
+        <!-- Ici l'ID est C1 et c'est utilise pour le sommaire!! 
          C'est un lien direct pour conduire l'utilisateur à ce paragraphe
          ainsi que pour le CSS! :) -->
 
@@ -55,8 +59,8 @@
 
 
 
-        <!-- Ancrage avec id = repère, très utile pour le CSS -->
-        <h2 id="ancrage">Comment les liens fonctionnent ? </h2>
+        <!-- C2 avec id = repère, très utile pour le CSS -->
+        <h2 id="C2">Comment les liens fonctionnent ? </h2>
         <!-- La balise "a" pour anchor indique qu'on va rediriger 
          vers un autre endroit, on ajoute l'attribut href puis ="" pour annoncer
          vers lequel on veut rediriger (aka le sommaire)-->
@@ -77,11 +81,15 @@
 
 
 
-        <h2 id="magic">Magie du click!</h2>
+        <h2 id="C3">Magie du click!</h2>
         <p>En gros, l'exercice est que j'ai une image de base et qu'elle rétrécisse lorsque je cliques dessus!</p>
-        <p class="gut">Vous voyez ce big guy ? eh bien en réalité, il cache une partie de lui qui est tout autre! <br>
-        <a href="small.jpg"><img src="big.jpg" alt="eh bah mince vous pouvez pas le voir.." title="Ce dont à quoi big guy ressemble vraiment!" width="200" height="400"></a>
-        <!-- Ici on a 2 images, la première est celle qui s'affiche en clicquant sur la deuxième-->
+        <p>Apparemment, il faut utiliser du JavaScript pour faire cela aie aie aie!!</p>
+        
+        <img src="big.jpg" alt="Clickable image" id="myImage" class="change"/>
+        <script src="script.js"></script>
+
+        <p>J'ai réussi lol, par contre c'est grâce à ChatGPT car j'ai pas encore abordé JavaScript
+            mais c'est satisfaisant de voir ce que c'est capable de faire</p>
         </p>
 
         <p>Im back after some time, le premier semestre est terminé enfin!
@@ -156,7 +164,18 @@
 
         <button onclick="document.location='https://www.w3schools.com/html/html_links_colors.asp'">W3schools</button><br>
 
-        
+        <h2 id="C4">Practice, practice and practice!</h2>
+        <p>This gonna be an exercice about Image Maps, so there will be an image and
+            several objects on it, if you click on the different object, it redirects
+            you somewhere else like a link!
+        </p>
+
+        <img src="workspace.jpg" alt="Workspace" usemap="#workmap" width="400" height="400">
+        <map name="workmap">
+            <area shape="rect" coords="382,54,605,264" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+            <area shape="rect" coords="142,439,391,548" alt="Chair" href="https://en.wikipedia.org/wiki/Chair">
+            <area shape="rect" coords="258,325,389,382" alt="Keyboard" href="https://en.wikipedia.org/wiki/Computer_keyboard">
+        </map>
 
 
 

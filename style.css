@@ -35,13 +35,26 @@ p {
     font-size: 70%;
 }
 
+.no_change_img {
+    width: 100px;
+    height: 100px;
+}
+
 .pomodedoux {
     color:rgb(77, 133, 237);
 }
 
-.gut {
+.change {
+    width: 300px;
+    transition: width 0.3s ease;
+    cursor: pointer;
+} 
+/*I still haven't learn how to use transition
+and cursor, pointer stuff so it's with 
+the help of ChatGPT*/
 
-    font-size: 15px;
+.small {
+    width: 150px;
 }
 
 iframe {
