@@ -1,0 +1,69 @@
+/*CSS stands for Cascading Style Sheets, it controls the layout of 
+multiple web pages all at once, you can actually use only the html file to also use
+CSS in the head but it's ugly to my opinion x), so i'd much rather use an external CSS file*/
+
+h1 {
+
+    color: #ffffff;
+    background-color: slateblue;
+    border: snow solid 2px;
+    margin: 100px;
+    text-align: center;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 200%;
+
+}
+
+/*Border and others properties : 
+Padding = space between the text and the border (ex: p {})
+Margin = space outside the border (ex: h1{}) */
+
+h2 {
+    color: #ffffff;
+    background-color: slateblue;
+    text-align: center;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 100%;
+}
+
+
+p {
+    color: #000000;
+    font-family: 'Verdana', sans-serif;
+    border: slateblue solid 1px;
+    padding: 10px;
+    font-size: 70%;
+}
+
+.pomodedoux {
+    color:rgb(77, 133, 237);
+}
+
+.gut {
+
+    font-size: 15px;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+    display: block; /* Centering the iframe */
+    border-radius: 40px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f0f0f0; /* Light background for the iframe */
+    transition: transform 0.3s ease;
+
+}
+
+a:link, a:visited {
+    color: rgb(148, 69, 179); /* Default link color */
+    background-color: transparent;
+    padding: 15px 25px;
+    text-decoration: none; /* No underline */
+}
+a:hover, a:active {
+    color: rgb(255, 0, 0); /* Color when hovered */
+    background-color: transparent;
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"> <!-- On indique le charset pour l'encodage des caractères -->
+        <title>May's World!</title>
+        <link rel="stylesheet" href="style.css"> <!-- On lie le fichier CSS pour le style -->
+        <!-- C'est un link normal et lorsqu'on utilise a href c'est un hyperlink -->
+    </head>
+    <body>
+        <!-- You can use CSS inline but I don't like it so that's just an example
+         I overwritten it on the CSS file though-->
+        <h1 style="background-color: slateblue;">May's World</h1>
+        <p>J'aimerais vous présenter quelqu'un de significatif dans <br> ce re again third time personnage !</p>
+        <!-- La balise <br> permet de revenir à la ligne, it is called an empty elemnts cause they dont have end tag -->
+        <img src="tropical_fish.jpg" title="J'aime bcp MINECRAFT, j'y ai bcp joué étant petite" alt="C'est une image d'un tropical fish de Minecraft" width ="100" height="100">
+        <!-- la balise alt s'execute lorque l'image n'apparait pas -->
+
+        <p>Voici le <strong>SOMMAIRE</strong> de cette page :<br>
+            <!-- On utilise la balise <strong> pour mettre en gras -->
+            <a href="#organisation">Comment organiser son texte</a><br>
+            <a href="#ancrage">Utilisation des balises "a" et "href"</a><br>
+            <a href="#magic">Un petit exercice avec des images</a>
+            <!-- On utilise la balise <a> pour créer des liens et ici l'utilise comme sommaire et naviguer
+                plus rapidement dans le site web-->
+        </p>
+
+
+
+
+
+        <h2 id="organisation" style="border:4px solid slateblue ;">J'organise mon texte!</h2>
+        <!-- Ici l'ID est oragnisation et c'est utilise pour le sommaire!! 
+         C'est un lien direct pour conduire l'utilisateur à ce paragraphe
+         ainsi que pour le CSS! :) -->
+
+        <p>J'ai besoin de faire mes courses!</p>
+        <p>J'aimerais acheter certaines <br> choses pour ma soeur</p> 
+        <ul> <!-- Donc ul = unordered list = liste à puces-->
+            <li>Chaussettes</li>
+            <li>Chips</li>
+            <li>Bonbons?</li>
+        </ul>
+        <p>Mais n'oublions pas ça :</p>
+        <ol> <!--ordered list aka numérotée-->
+            <li>Acheter un <strong>cadeau</strong></li>
+            <li>Emballer le <em>KADO</em></li>
+            <li>Lui faire la <mark>surprise</mark> hehe</li>
+            <!-- On utilise la balise mark pour surligner le texte -->
+            <!-- balise em = mettre texte en italique -->
+            <!-- balise strong = texte en gras -->
+
+        </ol>
+
+
+
+
+
+        <!-- Ancrage avec id = repère, très utile pour le CSS -->
+        <h2 id="ancrage">Comment les liens fonctionnent ? </h2>
+        <!-- La balise "a" pour anchor indique qu'on va rediriger 
+         vers un autre endroit, on ajoute l'attribut href puis ="" pour annoncer
+         vers lequel on veut rediriger (aka le sommaire)-->
+        <p class="pomodedoux">Lorsque je veux étudier sérieusement, j'utilise souvent la technique POMODORO, 
+            c'est banger!! En ce moment meme, je fais un 50/10 !</p>
+        <a href="https://www.youtube.com/watch?v=Md4JD1t8kig">C'est très utile pour se concentrer!</a>
+        <!-- Ca s'appelle un lien absolu : indique une adresse complète -->
+         <!-- On peut mettre des liens relatif, par exemple vers ma deuxieme page -->
+        <p>Je vous présente ma deuxième page, c'est juste histoire de me 
+            souvenir comment faire yayyy</p>
+        <a href="!Second.html">Ma deuxième page</a>
+        <!-- la balise < target="_blank" > permet d'ouvrir un nouvel onglet-->
+        <p>N'hésitez pas à m'envoyer un <a href="mailto:waagirl17@gmail.com" target="_blank">mail.</a></p>
+        
+    
+
+
+
+
+
+        <h2 id="magic">Magie du click!</h2>
+        <p>En gros, l'exercice est que j'ai une image de base et qu'elle rétrécisse lorsque je cliques dessus!</p>
+        <p class="gut">Vous voyez ce big guy ? eh bien en réalité, il cache une partie de lui qui est tout autre! <br>
+        <a href="small.jpg"><img src="big.jpg" alt="eh bah mince vous pouvez pas le voir.." title="Ce dont à quoi big guy ressemble vraiment!" width="200" height="400"></a>
+        <!-- Ici on a 2 images, la première est celle qui s'affiche en clicquant sur la deuxième-->
+        </p>
+
+        <p>Im back after some time, le premier semestre est terminé enfin!
+            J'ai trop hate, on va commencer des nouveaux cours dont deux langages 
+            de programmation, Java et C, par ailleurs, on est le 23 janvier!
+        </p>
+
+        <p>Hehhe <b>guess</b> <strong>WHO</strong> came back again after 7 <em>months</em> <del>lmaoo</del>, <small>on</small> est le <ins>1er aout</ins> lol <br>
+        On va <sup>apprendre</sup> à utiliser d'autres <sub>formatting elements</sub> yaaay.</p>
+
+
+
+       <!--ID ne peut etre utiliser que une fois dans le code, c'est surtout utile en JavaScript,
+       ou bien comme utiliser sur cette page, créer des ancres pour le défilement, ce qui correspont au sommaire de la page-->
+
+       <!--Balises universelles : SPAN et DIV 
+       span : balise type inline, met en avant l'importance de certains mots comme STRONG et EM
+       div : type block, qui entoure un bloc de texte, similar : h1 et p-->
+       <!--Strong : en gras et EM : en italique-->
+
+
+
+       <p>Recemment, j'ai acheté un livre sur CS Lewis, j'aime beaucoup certaines de ces citations, <br>
+        je vais mettre en avant quelques unes !!</p>
+
+        <blockquote style="background-color: slateblue;">
+            <strong>
+            Humility is not thinking less of yourself, it’s thinking of yourself less.</strong><br>
+        </blockquote>
+
+        <p>Another to do it ! <br>
+            <q>You cannot love a fellow creature fully till you love God.</q>
+        </p>
+
+        <address>
+            Written by May. <br>
+            Contact me at <a href="mailto:maya.wafoop@gmail.com">this email</a><br>
+            France, Paris. <br>
+        </address>
+
+        <!-- For the color, you have RGB for Red Green and Blue as well as HSL for Hue,
+         Saturation and Lightness, so hue is the degree on the color from 0 to 360, 
+         0 is red, 120 is green and 240 is blue | Saturation is like the
+         intensity of the color and is a percentage value,
+         0% is a shade of gray and 100% is the full color, 
+         Lightness also a pourcentage value, 0% blakc and 100% white-->
+
+        <p>If you have some time, I'd love you to visit 
+            <a href="!Second.html" target="_blank">my second website</a> 
+            to test on elements with hyperlinks!<br>
+            Une mise en abyme de siteweb! <br>
+            <iframe src="https://fr.wikipedia.org/wiki/HTML" target="_self" alt="Ceci est la page 
+            Wikipedia du HTML"></iframe>
+            <br>
+            Tadaaaaa!
+        </p>
+
+        <!-- the attribute TARGET specifies where to open the linked doc
+            _self - default | _blank - open in a new window/tab |
+            _parent - open in the parent frame | _top - -->
+
+        <!-- Absolute URL : always with http or another procotole, work anywhere cuz of the 
+            full path, it's an external location 
+            Relative URL points to a file or location relative to the current page -->
+
+       <a href="https://www.youtube.com/watch?v=Md4JD1t8kig" target="_blank">
+        <img src="smiley.gif" alt="Pomodoro video" style="width: 80px; height: 80px;"></a><br>
+
+        <!-- Another way to use link -->
+
+        <button onclick="document.location='!Second.html'">Second website page</button><br>
+
+        <button onclick="document.location='https://www.w3schools.com/html/html_links_colors.asp'">W3schools</button><br>
+
+        
+
+
+
+    </body>
+</html>
