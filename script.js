@@ -16,3 +16,4 @@ function keyboard(){
     alert("You clicked on the keyboard");
 }
 
+//imageMapResize();
