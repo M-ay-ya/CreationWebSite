@@ -2,6 +2,21 @@
 multiple web pages all at once, you can actually use only the html file to also use
 CSS in the head but it's ugly to my opinion x), so i'd much rather use an external CSS file*/
 
+/*For the color, you have RGB for Red Green and Blue as well as HSL for Hue,
+Saturation and Lightness, so hue is the degree on the color from 0 to 360, 
+0 is red, 120 is green and 240 is blue | Saturation is like the
+intensity of the color and is a percentage value,
+0% is a shade of gray and 100% is the full color, 
+Lightness also a pourcentage value, 0% blakc and 100% white*/
+
+body {
+
+    background-image: url('bg_web.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h1 {
 
     color: #ffffff;
@@ -79,4 +94,21 @@ a:hover, a:active {
     color: rgb(255, 0, 0); /* Color when hovered */
     background-color: transparent;
     text-decoration: underline; /* Underline on hover */
+}
+
+table {
+    font-family: 'Courier New', Courier, monospace;
+    width: 75%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+/* To avoid double borders , we use border-collapse*/
+th, td {
+    border: 1px solid slateblue;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 8px;
+    color: white;
+
 }

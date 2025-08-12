@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"> <!-- On indique le charset pour l'encodage des caractères -->
         <title>May's World!</title>
+        <link rel="icon" href="favicon.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css"> <!-- On lie le fichier CSS pour le style -->
         <!-- C'est un link normal et lorsqu'on utilise a href c'est un hyperlink -->
@@ -32,6 +33,7 @@
             <a href="#C2">Utilisation des balises "a" et "href"</a><br>
             <a href="#C3">Un petit exercice avec des images</a><br>
             <a href="#C4">Practice, that's it!</a>
+            <a href="#C5">Tableau en HTML</a>
 
             <!-- On utilise la balise <a> pour créer des liens et ici l'utilise comme sommaire et naviguer
                 plus rapidement dans le site web-->
@@ -139,12 +141,6 @@
             France, Paris. <br>
         </address>
 
-        <!-- For the color, you have RGB for Red Green and Blue as well as HSL for Hue,
-         Saturation and Lightness, so hue is the degree on the color from 0 to 360, 
-         0 is red, 120 is green and 240 is blue | Saturation is like the
-         intensity of the color and is a percentage value,
-         0% is a shade of gray and 100% is the full color, 
-         Lightness also a pourcentage value, 0% blakc and 100% white-->
 
         <p>If you have some time, I'd love you to visit 
             <a href="!Second.html" target="_blank">my second website</a> 
@@ -187,20 +183,30 @@
             <area shape="rect" coords="130,160,200,200" alt="Keyboard" href="https://en.wikipedia.org/wiki/Computer_keyboard">
         </map>
 
-    <!--
-        <img src="workspace.jpg" alt="Workspace usemap="#map" width="400px" height="400px">
+        <p>Après multiples essaies et une flemme, je l'ai enfin faite merci à notre cher MHD</p>
 
-        CHATGPT 
-        <map name="map">
-            <area target="_blank" alt="Computer" title="Computer" href="https://en.wikipedia.org/wiki/Computer" 
-            coords="192,28,313,40,302,139,183,111" shape="poly" onclick="computer()">
-            <area target="_blank" alt="Chair" title="Chair" href="https://en.wikipedia.org/wiki/Chair" 
-            coords="79,129,47,165,72,281,63,366,116,397,213,384,204,318,198,229,103,224,100,189" shape="poly" onclick="chair()">
-            <area target="_blank" alt="Keyboard" title="Keyboard" href="https://en.wikipedia.org/wiki/Computer_keyboard" 
-            coords="130,176,149,167,197,188,179,197" shape="poly" onclick="keyboard()">
-        </map> -->
+        <h2 id="C5">HTML table</h2>
+        <p>Cela se fait ligne par ligne</p>
 
-        <!-- Ca marche pas trop :(, le problème est sans doute lié à la taille de l'image et les coordonnées :() -->
+        <!-- th stands for table header and td for table -->
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Joyau</td>
+                <td>Nina</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Vivian</td>
+                <td>Noah</td>
+                <td>24</td>
+            </tr>
+        </table>
+
 
     </body>
 </html>
