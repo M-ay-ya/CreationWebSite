@@ -1,0 +1,25 @@
+h1 {
+
+    color: #ffffff;
+    background-color: slateblue;
+    border-style: groove;
+    border-width: 5px 10px;
+    border-radius: 10px;
+    margin: 100px;
+    text-align: center;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 200%;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

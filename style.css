@@ -21,7 +21,9 @@ h1 {
 
     color: #ffffff;
     background-color: slateblue;
-    border: snow solid 2px;
+    border-style: groove;
+    border-width: 5px 10px;
+    border-radius: 10px;
     margin: 100px;
     text-align: center;
     font-family: 'Cascadia Code', monospace;
@@ -31,11 +33,12 @@ h1 {
 
 /*Border and others properties : 
 Padding = space between the text and the border (ex: p {})
-Margin = space outside the border (ex: h1{}) */
+Margin = space outside the border and the closest other elements (page border or block of text (ex: h1{}) */
 
 h2 {
     color: #ffffff;
     background-color: slateblue;
+    border: black solid 3px; /*shorthand property*/
     text-align: center;
     font-family: 'Cascadia Code', monospace;
     font-size: 100%;
@@ -110,5 +113,12 @@ th, td {
     text-align: left;
     padding: 8px;
     color: white;
+
+}
+
+.table_choco {
+
+    border:1px solid black;
+    border-collapse: collapse;
 
 }
