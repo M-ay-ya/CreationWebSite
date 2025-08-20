@@ -165,7 +165,7 @@
 
         <!-- Another way to use link -->
 
-        <button onclick="document.location='!Second.html'">Second website page</button><br>
+        <button target="_blank" onclick="document.location='!Second.html'">Second website page</button><br>
 
         <button onclick="document.location='https://www.w3schools.com/html/html_links_colors.asp'">W3schools</button><br>
 
@@ -208,9 +208,55 @@
         </table>
 
             <br>
-        <!-- We can change the size of the table -->
+        <!-- We can change the size of the table, I did it in the second page
+         and also a vetical header one, and here another one with colspan -->
 
-        
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>57</td>
+            </tr>
+        </table>
+
+        <br>
+        <!--Another table again with rowspan!-->
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-1234</td>
+            </tr>
+            <tr>
+                <td>555-8745</td>
+            </tr>
+        </table>
+
+        <br>
+        <p>I'm gonna learn how to make a description list, so I'll use a recipe 
+            to illutrate how it works!
+        </p>
+        <dl color="white">
+            <dt>Ingredients</dt>
+            <dd>- 2 cups of flour</dd>
+            <dd>- 1 cup of sugar</dd>
+            <dd>- 1/2 cup of butter</dd>
+            <dt>Instructions</dt>
+            <dd>- Mix all ingredients together.</dd>
+            <dd>- Bake at 350°F for 30 minutes.</dd>
+        </dl>
 
 
     </body>
