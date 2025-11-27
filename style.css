@@ -49,7 +49,8 @@ p {
     color: #000000;
     font-family: 'Verdana', sans-serif;
     border: slateblue solid 1px;
-    padding: 10px;
+    margin: 30px;
+    padding: 20px;
     font-size: 70%;
 }
 
@@ -127,3 +128,71 @@ tr:hover {background-color: #D6EEEE;}
 dl {
     color: white;
 }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+
+nav li {
+  float: left; /*Display a list horizontally*/
+
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none; /*remove the underline*/
+}
+
+nav li a:hover {
+  background-color: #111111;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.one{
+    color:rgb(36, 70, 131);
+}
+
+.two{
+    color:rgb(148, 69, 179)
+}
+
+.three{
+    color:azure;
+}
+
+.button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 243, 115);
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: rgb(48, 246, 48);
+}
+
+#demo {
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+
+#butt {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
