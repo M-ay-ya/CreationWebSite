@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"> <!-- On indique le charset pour l'encodage des caractères -->
+        <title>May's World!</title>
+        <link rel="icon" href="favicon.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css"> <!-- On lie le fichier CSS pour le style -->
+        <!-- C'est un link normal et lorsqu'on utilise a href c'est un hyperlink -->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+        To add the map library -->
+        
+    </head>
+
+    <!-- If you want to push in github do that in vscode terminal
+     1. git add .
+     2. git commit -m "Your comment"
+     3. git push -u origin main -->
+
+     
+
+    <body>
+        <!-- You can use CSS inline but I don't like it so that's just an example
+         I overwritten it on the CSS file though-->
+        <header>
+            <h1 style="background-color: slateblue;">May's World</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+        
+            <p>J'aimerais vous présenter quelqu'un de significatif dans <br> ce re again third time personnage !</p>
+            <!-- La balise <br> permet de revenir à la ligne, it is called an empty elemnts cause they dont have end tag -->
+            <img src="tropical_fish.jpg" title="J'aime bcp MINECRAFT, j'y ai bcp joué étant petite" 
+            alt="C'est une image d'un tropical fish de Minecraft" class="no_change_img">
+            <!-- la balise alt s'execute lorque l'image n'apparait pas -->
+
+            <p>Voici le <strong>SOMMAIRE</strong> de cette page :<br>
+                <!-- On utilise la balise <strong> pour mettre en gras -->
+                <a href="#C1">Comment organiser son texte</a><br>
+                <a href="#C2">Utilisation des balises "a" et "href"</a><br>
+                <a href="#C3">Un petit exercice avec des images</a><br>
+                <a href="#C4">Practice, that's it!</a>
+                <a href="#C5">Tableau en HTML</a>
+
+                <!-- On utilise la balise <a> pour créer des liens et ici l'utilise comme sommaire et naviguer
+                    plus rapidement dans le site web-->
+            </p>
+
+            <section>
+                <div class="container">
+                <div class="one">Élément 1</div>
+                <div class="two">Élément 2</div>
+                <div class="three">Élément 3</div>
+                </div>
+            </section>
+
+
+
+
+
+            <h2 id="C1">J'organise mon texte!</h2>
+            <!-- Ici l'ID est C1 et c'est utilise pour le sommaire!! 
+            C'est un lien direct pour conduire l'utilisateur à ce paragraphe
+            ainsi que pour le CSS! :) -->
+
+            <p>J'ai besoin de faire mes courses!</p>
+            <p>J'aimerais acheter certaines choses pour ma soeur avec des bullets</p> 
+            <ul> <!-- Donc ul = unordered list = liste à puces-->
+                <li>Chaussettes</li>
+                <li>Chips</li>
+                <li>Bonbons?</li>
+            </ul>
+
+            <p>Mais n'oublions pas ça :</p>
+
+            <ol> <!--ordered list aka numérotée-->
+                <li>Acheter un <strong>cadeau</strong></li>
+                <li>Emballer le <em>KADO</em></li>
+                <li>Lui faire la <mark>surprise</mark> hehe</li>
+                <!-- On utilise la balise mark pour surligner le texte -->
+                <!-- balise em = mettre texte en italique -->
+                <!-- balise strong = texte en gras -->
+            </ol>
+
+            
+            <ul style="list-style-type:circle;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <p>Ewww, je n'aime pas le coffee</p>
+
+
+            <br>
+
+
+            <!-- C2 avec id = repère, très utile pour le CSS -->
+            <h2 id="C2">Comment les liens fonctionnent ? </h2>
+            <!-- La balise "a" pour anchor indique qu'on va rediriger 
+            vers un autre endroit, on ajoute l'attribut href puis ="" pour annoncer
+            vers lequel on veut rediriger (aka le sommaire)-->
+            <p class="pomodedoux">Lorsque je veux étudier sérieusement, j'utilise souvent la technique POMODORO, 
+                c'est banger!! En ce moment meme, je fais un 50/10 !</p>
+            <a href="https://www.youtube.com/watch?v=Md4JD1t8kig">C'est très utile pour se concentrer!</a>
+            <!-- Ca s'appelle un lien absolu : indique une adresse complète -->
+            <!-- On peut mettre des liens relatif, par exemple vers ma deuxieme page -->
+            <p>Je vous présente ma deuxième page, c'est juste histoire de me 
+                souvenir comment faire yayyy</p>
+            <a href="!Second.html">Ma deuxième page</a>
+            <!-- la balise < target="_blank" > permet d'ouvrir un nouvel onglet-->
+            <p>N'hésitez pas à m'envoyer un <a href="mailto:waagirl17@gmail.com" target="_blank">mail.</a></p>
+            
+        
+
+
+
+
+
+            <h2 id="C3">Magie du click!</h2>
+            <p>En gros, l'exercice est que j'ai une image de base et qu'elle rétrécisse lorsque je cliques dessus!</p>
+            <p>Apparemment, il faut utiliser du JavaScript pour faire cela aie aie aie!!</p>
+
+            
+            
+            <img src="big.jpg" alt="Clickable image" id="myImage" class="change"/>
+            
+            
+            
+
+            <p>J'ai réussi lol, par contre c'est grâce à ChatGPT car j'ai pas encore abordé JavaScript
+                mais c'est satisfaisant de voir ce que c'est capable de faire</p>
+            </p>
+
+            <p>Im back after some time, le premier semestre est terminé enfin!
+                J'ai trop hate, on va commencer des nouveaux cours dont deux langages 
+                de programmation, Java et C, par ailleurs, on est le 23 janvier!
+            </p>
+
+            <p>Hehhe <b>guess</b> <strong>WHO</strong> came back again after 7 <em>months</em> <del>lmaoo</del>, <small>on</small> est le <ins>1er aout</ins> lol <br>
+            On va <sup>apprendre</sup> à utiliser d'autres <sub>formatting elements</sub> yaaay.</p>
+
+
+
+            <!--ID ne peut etre utiliser que une fois dans le code, c'est surtout utile en JavaScript,
+            ou bien comme utiliser sur cette page, créer des ancres pour le défilement, ce qui correspont au sommaire de la page-->
+
+            <!--Balises universelles : SPAN et DIV 
+            span : balise type inline, met en avant l'importance de certains mots comme STRONG et EM
+            div : type block, qui entoure un bloc de texte, similar : h1 et p-->
+            <!--Strong : en gras et EM : en italique-->
+
+
+
+            <p>Recemment, j'ai acheté un livre sur CS Lewis, j'aime beaucoup certaines de ces citations, <br>
+                je vais mettre en avant quelques unes !!</p>
+
+            <blockquote style="background-color: slateblue;">
+                <strong>
+                Humility is not thinking less of yourself, it’s thinking of yourself less.</strong><br>
+            </blockquote>
+
+            <p>Another to do it ! <br>
+                <q>You cannot love a fellow creature fully till you love God.</q>
+            </p>
+
+            <address>
+                Written by May. <br>
+                Contact me at <a href="mailto:maya.wafoop@gmail.com">this email</a><br>
+                France, Paris. <br>
+            </address>
+
+
+            <p>If you have some time, I'd love you to visit 
+                <a href="!Second.html" target="_blank">my second website</a> 
+                to test on elements with hyperlinks!<br>
+                Une mise en abyme de siteweb! <br>
+                Tadaaaaa!
+            </p>
+            <iframe src="https://fr.wikipedia.org/wiki/HTML" target="_self" alt="Ceci est la page 
+                Wikipedia du HTML"></iframe>
+
+            <!-- the attribute TARGET specifies where to open the linked doc
+                _self - default | _blank - open in a new window/tab |
+                _parent - open in the parent frame | _top - -->
+
+            <!-- Absolute URL : always with http or another procotole, work anywhere cuz of the 
+                full path, it's an external location 
+                Relative URL points to a file or location relative to the current page -->
+
+            <a href="https://www.youtube.com/watch?v=Md4JD1t8kig" target="_blank">
+            <img src="smiley.gif" alt="Pomodoro video" style="width: 80px; height: 80px;"></a><br>
+
+            <!-- Another way to use link -->
+
+            <button target="_blank" onclick="document.location='!Second.html'">Second website page</button><br>
+
+            <button onclick="document.location='https://www.w3schools.com/html/html_links_colors.asp'">W3schools</button><br>
+
+            <h2 id="C4">Practice, practice and practice!</h2>
+            <p>This gonna be an exercice about Image Maps, so there will be an image and
+                several objects on it, if you click on the different object, it redirects
+                you somewhere else like a link!
+            </p>
+
+
+            <img src="workspace.jpg" alt="Workspace" usemap="#workmap" width="400" height="400">
+            <map name="workmap">
+                <area shape="rect" coords="195,20,300,150" alt="Computer" href="https://en.wikipedia.org/wiki/Computer" onclick="myFunction()">
+                <area shape="poly" coords="50,150,50,400,200,400,200,250" alt="Chair" href="https://en.wikipedia.org/wiki/Chair">
+                <area shape="rect" coords="130,160,200,200" alt="Keyboard" href="https://en.wikipedia.org/wiki/Computer_keyboard">
+            </map>
+
+            <p>Après multiples essaies et une flemme, je l'ai enfin faite merci à notre cher MHD</p>
+
+            <h2 id="C5">HTML table</h2>
+            <p>Cela se fait ligne par ligne</p>
+
+            <!-- th stands for table header-->
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Joyau</td>
+                    <td>Nina</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Vivian</td>
+                    <td>Noah</td>
+                    <td>24</td>
+                </tr>
+            </table>
+
+                <br>
+            <!-- We can change the size of the table, I did it in the second page
+            and also a vetical header one, and here another one with colspan -->
+
+            <table>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>57</td>
+                </tr>
+            </table>
+
+            <br>
+            <!--Another table again with rowspan!-->
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Jill</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Phone</th>
+                    <td>555-1234</td>
+                </tr>
+                <tr>
+                    <td>555-8745</td>
+                </tr>
+            </table>
+
+            <br>
+            <p>I'm gonna learn how to make a description list, so I'll use a recipe 
+                to illutrate how it works!
+            </p>
+            <dl color="white">
+                <dt>Ingredients</dt>
+                <dd>- 2 cups of flour</dd>
+                <dd>- 1 cup of sugar</dd>
+                <dd>- 1/2 cup of butter</dd>
+                <dt>Instructions</dt>
+                <dd>- Mix all ingredients together.</dd>
+                <dd>- Bake at 350°F for 30 minutes.</dd>
+            </dl>
+
+            <br>
+
+            <p style="border: 1px solid black">Hello World</p>
+            <div style="border: 1px solid black">Hello World</div>
+
+            <p>The P and the DIV elements are both block elements, and they will 
+                always start on a new line and take up the full width available 
+                (stretches out to the left and right as far as it can).</p>
+
+            <div style="background-color:black;color:white;padding:20px;">
+            <h2>London</h2>
+            <p style ="color: white;">London is the capital city of England. It is the most populous city 
+                in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+            </p>
+            <p style ="color: white;">Standing on the River Thames, London has been a major settlement for two 
+                millennia, its history going back to its founding by the Romans, who named 
+                it Londinium.
+            </p>
+            </div> 
+
+            <br>
+
+            <div>Default button with no styling:</div>
+            <button>Click me</button>
+            <br>
+            <div>Another botton but more stylishhh</div>
+            <button class="button">Click me again!</button>
+            <br>
+            <div>Another other button but with some js</div>
+            
+            <button id="butt" onclick="">Catch me if you can!</button>
+            <p id="demo">JavaScript can change the HTML content by clicking on this button</p>
+
+            <br>
+
+            <div class="outline">Element border + outline</div>
+
+            <p>On passe à l'apprentissage du formulaire hehe!!!!!! &lt; and &gt; and &euro; yay &#128511;</p>
+
+            <section>
+                <!-- action= "" : c'est pour le PHP -->
+                <form action="" method="get">
+                    <label for="prenom">Votre prénom </label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Maya">
+                    <br>
+                    <br>
+                    <label>Votre mot de passe</label>
+                    <input type="password">
+                    <br>
+                    <br>
+                    <label for="ameliorer">Des conseils pour améliorer mon site?</label>
+                    <br>
+                    <textarea name="ameliorer" id="ameliorer"></textarea>
+                    <br>
+                    <br>
+                    <label>Cochez les aliments que vous aimez manger :</label>
+                    <input type="checkbox" name="frites" id="frites"> <label for="frites">Frites</label><br>
+                    <input type="checkbox" name="steak" id="steak"> <label for="steak">Steak</label><br>
+
+                    <aside class="note">
+                        This is a quick note <br> Of course, there aren't just those food there! <br>
+                        There are many more recipes but it's only for those who stays for a few days !
+                    </aside>
+
+                    <input type="checkbox" name="epinards" id="epinards"> <label for="epinards">Épinards</label><br>
+                    <input type="checkbox" name="huitres" id="huitres"> <label for="huitres">Huitres</label>
+                    <br>
+                    <br>
+                    <!-- Choix radio : plusieurs proposition mais un seul choix possible-->
+                    <label>Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :</label><br>
+                    <input type="radio" name="age" value="moins15" id="moins15"> <label for="moins15">Moins de 15 ans</label><br>
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25"> <label for="medium15-25">15-25 ans</label><br>
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40"> <label for="medium25-40">25-40 ans</label><br>
+                    <input type="radio" name="age" value="plus40" id="plus40"> <label for="plus40">Plus de 40 ans</label>
+
+                    <br>
+                    <br>
+
+                    <label for="pays">Dans quel pays habitez-vous?</label><br>
+                    <select>
+                        <option value="spain">Espagne</option>
+                        <!-- selected : valeur par défaut-->
+                        <option value="france" selected>France</option>
+                        <option value="china">Chine</option>
+                        <option value="japon">Japon</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </form>
+            </section>
+
+            <section>
+
+                <br>
+
+                <p>New type of forms hehe</p>
+
+                <form method="get" action="">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+                        <label for="nom">Quel est votre nom ?</label>
+                        <input type="text" name="nom" id="nom">
+                        <label for="prenom">Quel est votre prénom ?</label>
+                        <input type="text" name="prenom" id="prenom">
+                        <label for="email">Quel est votre e-mail ?</label>
+                        <input type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+                            Faites un souhait que vous voudriez voir exaucé :
+                            <input type="radio" name="souhait" value="riche" id="riche"> <label for="riche">Être riche</label>
+                            <input type="radio" name="souhait" value="celebre" id="celebre"> <label for="celebre">Être célèbre</label>
+                            <input type="radio" name="souhait" value="intelligent" id="intelligent"> <label for="intelligent">Être <strong>encore</strong> plus intelligent</label>
+                            <input type="radio" name="souhait" value="autre" id="autre"> <label for="autre">Autre...</label>
+                    
+    
+                            <label for="precisions">Si "Autre", veuillez préciser :</label>
+                            <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                    </fieldset>
+                </form>
+            </section>
+
+            <form method="get" action="">
+                <title>Does it work?</title>
+                <label for="plante">Quelle plante souhaitez-vous acheter ?</label>
+                <select name="plante" id="plante">
+                    <option value="philodendron">Philodendron</option>
+                    <option value="calathea">Calathea</option>
+                    <option value="pilea">Pilea</option>
+                    <option value="yucca">Yucca</option>
+                </select>
+            </form>
+            
+
+        </main>
+        
+        <script src="script.js"></script>
+
+    </body>
+
+    <footer>
+
+
+        
+    </footer>
+
+    
+</html>

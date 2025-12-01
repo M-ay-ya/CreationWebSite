@@ -1,0 +1,246 @@
+/*CSS stands for Cascading Style Sheets, it controls the layout of 
+multiple web pages all at once, you can actually use only the html file to also use
+CSS in the head but it's ugly to my opinion x), so i'd much rather use an external CSS file*/
+
+/*For the color, you have RGB for Red Green and Blue as well as HSL for Hue,
+Saturation and Lightness, so hue is the degree on the color from 0 to 360, 
+0 is red, 120 is green and 240 is blue | Saturation is like the
+intensity of the color and is a percentage value,
+0% is a shade of gray and 100% is the full color, 
+Lightness also a pourcentage value, 0% blakc and 100% white*/
+
+body {
+
+    background-image: url('bg_web.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+
+    color: #ffffff;
+    background-color: slateblue;
+    border-style: groove;
+    border-width: 5px 10px;
+    border-radius: 10px;
+    margin: 100px;
+    text-align: center;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 200%;
+
+}
+
+/*Border and others properties : 
+Padding = space between the text and the border (ex: p {})
+Margin = space outside the border and the closest other elements (page border or block of text (ex: h1{}) */
+
+h2 {
+    color: #ffffff;
+    background-color: slateblue;
+    border: black solid 3px; /*shorthand property*/
+    text-align: center;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 100%;
+}
+
+
+p {
+    color: #000000;
+    font-family: 'Verdana', sans-serif;
+    border: slateblue solid 1px;
+    margin: 30px;
+    padding: 20px;
+    font-size: 70%;
+}
+
+.no_change_img {
+    width: 100px;
+    height: 100px;
+}
+
+.pomodedoux {
+    color:rgb(77, 133, 237);
+}
+
+.change {
+    width: 300px;
+    transition: width 0.3s ease;
+    cursor: pointer;
+} 
+/*I still haven't learn how to use transition
+and cursor, pointer stuff so it's with 
+the help of ChatGPT*/
+
+.small {
+    width: 150px;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+    display: block; /* Centering the iframe */
+    border-radius: 40px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f0f0f0; /* Light background for the iframe */
+    transition: transform 0.3s ease;
+
+}
+
+a:link, a:visited {
+    color: rgb(148, 69, 179); /* Default link color */
+    background-color: transparent;
+    padding: 15px 25px;
+    text-decoration: none; /* No underline */
+}
+a:hover, a:active {
+    color: rgb(255, 0, 0); /* Color when hovered */
+    background-color: transparent;
+    text-decoration: underline; /* Underline on hover */
+}
+
+table {
+    font-family: 'Courier New', Courier, monospace;
+    width: 75%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+/* To avoid double borders , we use border-collapse*/
+th, td {
+    border: 1px solid slateblue;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 8px;
+    color: white;
+}
+
+tr:hover {background-color: #D6EEEE;}
+
+.table_choco {
+
+    border:1px solid black;
+    border-collapse: collapse;
+
+}
+
+dl {
+    color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+
+nav li {
+  float: left; /*Display a list horizontally*/
+
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none; /*remove the underline*/
+}
+
+nav li a:hover {
+  background-color: #111111;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.one{
+    color:rgb(36, 70, 131);
+}
+
+.two{
+    color:rgb(148, 69, 179)
+}
+
+.three{
+    color:azure;
+}
+
+.button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 243, 115);
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: rgb(48, 246, 48);
+}
+
+#demo {
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+
+#butt {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.outline{
+    text-align: center;
+    font-size: 40px;
+    border: 10px solid slateblue;
+    outline: 10px solid yellow;
+    border-radius: 20px;
+    outline-offset: 10px; /*space between outline and border and it could be a negative value like -5px*/
+}
+
+form{
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+label{
+    font-size: 20px;
+}
+
+input{
+    padding:10px;
+    border: 1px solid black;
+}
+
+.note{
+    width: 200px;
+    padding: 15px;
+    margin: 0 0 20px 20px;
+    float: right;
+    font-style: italic;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+fieldset {
+  border: none;
+  background-color: #C2B0F9;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+legend {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 4px;
+}
